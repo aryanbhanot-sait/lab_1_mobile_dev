@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Alert, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Alert, Pressable, Button } from 'react-native';
 import FruitList from '../components/fruitlist';
+import { Link } from 'expo-router';
 
 export default function App() {
     return (
@@ -13,6 +14,12 @@ export default function App() {
             <FruitList />
 
             <StatusBar style="auto" />
+
+            <View style={styles.container}>
+                <Link href="/lab3" asChild>
+                    <Button title="Lab 3 - made by Aryan" />
+                </Link>
+            </View>
 
         </View>
     );
