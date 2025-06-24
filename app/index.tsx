@@ -21,6 +21,12 @@ export default function App() {
                 </Link>
             </View>
 
+            <Link href="/lab4" asChild>
+                <Pressable style={styles.button}>
+                    <Text style={styles.heading}>Go to Lab 4</Text>
+                </Pressable>
+            </Link>
+
         </View>
     );
 }
